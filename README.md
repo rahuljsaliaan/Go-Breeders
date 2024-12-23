@@ -18,3 +18,4 @@
 | deploy      | 🚀     | :rocket:           | Deploy code                                 |
 | security    | 🔒     | :lock:             | Fix security issues                         |
 | hotfix      | 🚑     | :ambulance:        | Critical hotfix                             |
+| assets      | 🖼️     | :framed_picture:   | Add or update static assets (images/files)  |
