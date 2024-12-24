@@ -5,6 +5,7 @@
 |-------------|-------|--------------------|---------------------------------------------|
 | feat        | ✨     | :sparkles:         | Add new feature                             |
 | fix         | 🐛     | :bug:              | Fix a bug                                   |
+| enhance     | 🌟     | :star2:            | Enhance existing functionality              |
 | docs        | 📝     | :memo:             | Update documentation                        |
 | style       | 🎨     | :art:              | Improve code structure/format               |
 | refactor    | ♻️     | :recycle:          | Refactor code                               |
@@ -18,5 +19,5 @@
 | deploy      | 🚀     | :rocket:           | Deploy code                                 |
 | security    | 🔒     | :lock:             | Fix security issues                         |
 | hotfix      | 🚑     | :ambulance:        | Critical hotfix                             |
+| data        | 🗃️     | :card_file_box:   | Add or update models/database               |
 | assets      | 🖼️     | :framed_picture:   | Add or update static assets (images/files)  |
-| enhance     | 🌟     | :star2:            | Enhance existing functionality              |
