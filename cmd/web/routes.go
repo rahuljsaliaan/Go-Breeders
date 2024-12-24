@@ -21,6 +21,13 @@ func (app *application) routes() http.Handler {
 	// DESC: Strip the /static prefix and generate a handler function from the file server
 	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 
+	// Display our test page
+	mux.Get("/test-patterns", app.TestPatterns)
+
+	// Factory routes
+	mux.Get("/api/dog-from-factory", app.CreateDogFromFactory)
+	mux.Get("/api/cat-from-factory", app.CreateCatFromFactory)
+
 	// NOTE:  A very important reusability feature of the chi router is the ability to define routes with URL parameters. You can render any page by passing the page name as a URL parameter
 	mux.Get("/{page}", app.ShowPage)
 

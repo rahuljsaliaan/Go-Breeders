@@ -70,9 +70,10 @@ type Breeder struct {
 }
 
 type Pet struct {
-	Species   string `json:"species"`
-	Breed     string `json:"breed"`
-	MinWeight int    `json:"min_weight"`
-	MaxWeight int    `json:"max_weight"`
-	LifeSpan  int    `json:"life_span"`
+	Species     string `json:"species"`
+	Breed       string `json:"breed"`
+	MinWeight   int    `json:"min_weight"`
+	MaxWeight   int    `json:"max_weight"`
+	Description string `json:"description"`
+	LifeSpan    int    `json:"life_span"`
 }
