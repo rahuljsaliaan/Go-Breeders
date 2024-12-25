@@ -8,10 +8,10 @@ services:
       - "3306:3306"
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: breeders
-      MYSQL_USER: mariadb
-      MYSQL_PASSWORD: myverysecretpassword
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - ./db-data/mariadb:/var/lib/mysql
       - ./sql/breeders_mysql.sql:/docker-entrypoint-initdb.d/create_tables.sql
