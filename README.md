@@ -21,3 +21,4 @@
 | style       | 🎨     | :art:              | Improve code structure/format               |
 | test        | 🧪     | :test_tube:        | Add or update tests                         |
 | wip         | 🚧     | :construction:     | Work in progress                            |
+| remove      | 🗑️     | :wastebasket:      | Remove code or files                        |
