@@ -1,23 +1,23 @@
 # Go Breeders
 
-
 | Commit Type | Emoji | Gitmoji Name       | Description                                 |
 |-------------|-------|--------------------|---------------------------------------------|
+| assets      | 🖼️     | :framed_picture:   | Add or update static assets (images/files)  |
+| build       | 👷     | :construction_worker: | Update build scripts/tools              |
+| chore       | 🔧     | :wrench:           | Maintenance tasks                           |
+| ci          | 💚     | :green_heart:      | Update CI configuration                     |
+| data        | 🗃️     | :card_file_box:   | Add or update models/database               |
+| deploy      | 🚀     | :rocket:           | Deploy code                                 |
+| docs        | 📝     | :memo:             | Update documentation                        |
+| enhance     | 🌟     | :star2:            | Enhance existing functionality              |
 | feat        | ✨     | :sparkles:         | Add new feature                             |
 | fix         | 🐛     | :bug:              | Fix a bug                                   |
-| enhance     | 🌟     | :star2:            | Enhance existing functionality              |
-| docs        | 📝     | :memo:             | Update documentation                        |
-| style       | 🎨     | :art:              | Improve code structure/format               |
-| refactor    | ♻️     | :recycle:          | Refactor code                               |
-| perf        | ⚡     | :zap:              | Improve performance                         |
-| test        | ✅     | :white_check_mark: | Add or update tests                         |
-| chore       | 🔧     | :wrench:           | Maintenance tasks                           |
-| build       | 👷     | :construction_worker: | Update build scripts/tools              |
-| ci          | 💚     | :green_heart:      | Update CI configuration                     |
-| revert      | ⏪     | :rewind:           | Revert changes                              |
-| init        | 🎉     | :tada:             | Initial commit                              |
-| deploy      | 🚀     | :rocket:           | Deploy code                                 |
-| security    | 🔒     | :lock:             | Fix security issues                         |
 | hotfix      | 🚑     | :ambulance:        | Critical hotfix                             |
-| data        | 🗃️     | :card_file_box:   | Add or update models/database               |
-| assets      | 🖼️     | :framed_picture:   | Add or update static assets (images/files)  |
+| init        | 🎉     | :tada:             | Initial commit                              |
+| perf        | ⚡     | :zap:              | Improve performance                         |
+| refactor    | ♻️     | :recycle:          | Refactor code                               |
+| revert      | ⏪     | :rewind:           | Revert changes                              |
+| security    | 🔒     | :lock:             | Fix security issues                         |
+| style       | 🎨     | :art:              | Improve code structure/format               |
+| test        | 🧪     | :test_tube:        | Add or update tests                         |
+| wip         | 🚧     | :construction:     | Work in progress                            |
