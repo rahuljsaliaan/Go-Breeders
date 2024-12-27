@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"rahuljsaliaan/go-breeders/models"
 	"strconv"
 	"time"
 
@@ -18,6 +19,7 @@ type application struct {
 	templateMap map[string]*template.Template
 	config      appConfig
 	DB          *sql.DB
+	Models      models.Models
 }
 
 type appConfig struct {
@@ -90,6 +92,8 @@ func main() {
 		log.Panic(err)
 	}
 	app.DB = db
+
+	app.Models = *models.New(db)
 
 	// Start the web server
 	srv := &http.Server{

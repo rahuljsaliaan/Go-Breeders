@@ -33,5 +33,7 @@ func (app *application) routes() http.Handler {
 	// NOTE:  A very important reusability feature of the chi router is the ability to define routes with URL parameters. You can render any page by passing the page name as a URL parameter
 	mux.Get("/{page}", app.ShowPage)
 
+	mux.Get("/api/dog-breeds", app.GetAllDogBreedsJSON)
+
 	return mux
 }
