@@ -1,7 +1,6 @@
 package main
 
 import (
-	"database/sql"
 	"flag"
 	"fmt"
 	"html/template"
@@ -18,7 +17,6 @@ import (
 type application struct {
 	templateMap map[string]*template.Template
 	config      appConfig
-	DB          *sql.DB
 	Models      models.Models
 }
 
@@ -34,7 +32,7 @@ type appConfig struct {
 
 func (a *application) loadEnv() {
 	// Load environment variables from .env file (optional, for development)
-	err := godotenv.Load("../../.env")
+	err := godotenv.Load()
 	if err != nil {
 		log.Println("No .env file found, using system environment variables")
 	}
@@ -91,7 +89,6 @@ func main() {
 	if err != nil {
 		log.Panic(err)
 	}
-	app.DB = db
 
 	app.Models = *models.New(db)
 
