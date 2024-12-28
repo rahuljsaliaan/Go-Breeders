@@ -34,7 +34,7 @@ type appConfig struct {
 
 func (a *application) loadEnv() {
 	// Load environment variables from .env file (optional, for development)
-	err := godotenv.Load()
+	err := godotenv.Load("../../.env")
 	if err != nil {
 		log.Println("No .env file found, using system environment variables")
 	}
