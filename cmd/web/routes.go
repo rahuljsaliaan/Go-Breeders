@@ -24,11 +24,15 @@ func (app *application) routes() http.Handler {
 	// Display our test page
 	mux.Get("/test-patterns", app.TestPatterns)
 
-	// Factory routes
+	// factory routes
 	mux.Get("/api/dog-from-factory", app.CreateDogFromFactory)
 	mux.Get("/api/cat-from-factory", app.CreateCatFromFactory)
 	mux.Get("/api/dog-from-abstract-factory", app.CreateDogFromAbstractFactory)
 	mux.Get("/api/cat-from-abstract-factory", app.CreateCatFromAbstractFactory)
+
+	// builder routes
+	mux.Get("/api/dog-from-builder", app.CreateDogWithBuilder)
+	mux.Get("/api/cat-from-builder", app.CreateCatWithBuilder)
 
 	// NOTE:  A very important reusability feature of the chi router is the ability to define routes with URL parameters. You can render any page by passing the page name as a URL parameter
 	mux.Get("/{page}", app.ShowPage)
